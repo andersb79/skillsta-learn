@@ -1,10 +1,10 @@
 const config = {
-  base: "appC7N77wl4iVEXGD",
+  base: "appdYfHKKhlOpdixP",
   table: "Levels",
   view: "Grid%20view",
   apiKey: "keyHQ5GM7ktar7YtG",
   maxRecords: 1000,
-  url: "https://api.airtable.com/v0/appC7N77wl4iVEXGD"
+  url: "https://api.airtable.com/v0/appdYfHKKhlOpdixP"
 };
 
 export default {
@@ -29,9 +29,7 @@ export default {
       filterByFromula = "";
     }
 
-    const url = `${config.url}/${conf.table}?${includeFields}maxRecords=${
-      conf.maxRecords
-    }&view=${conf.view}${filterByFromula}`;
+    const url = `${config.url}/${conf.table}?${includeFields}maxRecords=${conf.maxRecords}&view=${conf.view}${filterByFromula}`;
 
     return new Request(url, {
       method: "get",
